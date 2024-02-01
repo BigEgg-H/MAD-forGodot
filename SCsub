@@ -1,0 +1,14 @@
+# SCsub
+
+Import('env')
+
+#root
+env.add_source_files(env.modules_sources, "*.cpp")
+#base
+env.add_source_files(env.modules_sources, "mad_base\\*.cpp")
+#servers_2d
+env.add_source_files(env.modules_sources, "mad_servers_2d\\*.cpp")
+env.add_source_files(env.modules_sources, "mad_servers_2d\\HDVDBPS\\*.cpp")
+#servers_3d
+env.add_source_files(env.modules_sources, "mad_servers_3d\\*.cpp")
+env.add_source_files(env.modules_sources, "mad_servers_3d\\HDVDBPS\\*.cpp")
