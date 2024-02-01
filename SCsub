@@ -6,6 +6,8 @@ Import('env')
 env.add_source_files(env.modules_sources, "*.cpp")
 #base
 env.add_source_files(env.modules_sources, "mad_base\\*.cpp")
+env.add_source_files(env.modules_sources, "mad_base\\GGSCCS\\*.cpp")
+env.add_source_files(env.modules_sources, "mad_base\\TIGAS\\*.cpp")
 #servers_2d
 env.add_source_files(env.modules_sources, "mad_servers_2d\\*.cpp")
 env.add_source_files(env.modules_sources, "mad_servers_2d\\HDVDBPS\\*.cpp")
