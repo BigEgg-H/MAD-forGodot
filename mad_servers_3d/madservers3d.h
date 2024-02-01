@@ -1,5 +1,5 @@
-#ifndef MADSERVERS3D
-#define MADSERVERS3D
+#ifndef MADSERVERS3D_H
+#define MADSERVERS3D_H
 
 #include "HDVDBPS/hdvdbps3d.h"
 

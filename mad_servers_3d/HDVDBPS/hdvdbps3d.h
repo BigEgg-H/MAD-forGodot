@@ -1,5 +1,5 @@
-#ifndef HDVDBPS3D
-#define HDVDBPS3D
+#ifndef HDVDBPS3D_H
+#define HDVDBPS3D_H
 
 #include "../../madstdlib.h"
 
