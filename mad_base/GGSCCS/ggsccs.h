@@ -12,12 +12,19 @@
 #include "core/templates/rid.h"
 #include "core/variant/variant.h"
 
+#define MAD_VERSION_GGSCCS "0_1_0_0"
+
 typedef void (*MADCommand());
+
+struct StreamCommand {
+	MADCommand Command;
+	Array Parameter;
+};
 
 class SC : public RefCounted{
 	GDCLASS(SC, RefCounted);
 
-	Vector<MADCommand*> commands;
+	Vector<StreamCommand*> commands;
 
 	bool packed;
 
@@ -47,10 +54,12 @@ private:
 public:
 	GGSCCS();
 	static GGSCCS *get_singleton();
+	void exit();
 
 public:
 	MADERROR excute_SC(SC *p_SC);
 	MADERROR push_SC(SC *p_SC);
+	MADERROR make_game_session(bool multiplayer = false);
 
 protected:
 	static void _bind_methods();
