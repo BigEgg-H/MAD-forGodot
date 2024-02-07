@@ -15,7 +15,6 @@ static GGSCCS* g_ggsccs_singleton = NULL;
 void initialize_mad_module(ModuleInitializationLevel p_level) {
 	if (p_level == MODULE_INITIALIZATION_LEVEL_SERVERS) {
 		g_ggsccs_singleton = memnew(GGSCCS);
-		ClassDB::register_class<SCAllocator>();
 		ClassDB::register_class<GGSCCS>();
 		Engine::get_singleton()->add_singleton(Engine::Singleton("GGSCCS", g_ggsccs_singleton->get_singleton()));
 	}
