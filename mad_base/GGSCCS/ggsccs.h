@@ -2,6 +2,7 @@
 #define GGSCCS_H
 
 #include "../../madstdlib.h"
+#include "../TIGAS/tigas.h"
 
 #include "core/object/object.h"
 #include "core/object/ref_counted.h"

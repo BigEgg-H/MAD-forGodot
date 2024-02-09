@@ -45,3 +45,4 @@ void GGSCCS::exit() {
 	memdelete(mutex_commands);
 	memdelete(mutex_commands_loop);
 }
+
